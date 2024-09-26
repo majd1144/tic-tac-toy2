@@ -1,0 +1,122 @@
+
+/* At the top of your CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Apply "Press Start 2P" font to the game elements */
+.h1, .player-name, .gameboard, .sequare {
+  font-family: 'Press Start 2P', cursive; /* For game-related elements */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Oxygen', sans-serif; /* Oxygen for the general text */
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* خلفية بلون أزرق فاتح */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .content {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .h1 {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* إعدادات اللاعبين */
+  #players {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .player-name {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .player-symbol {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  button {
+    background-color: #4caf50;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* إعدادات لوحة اللعب */
+  .gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .sequare {
+    width: 100px;
+    height: 100px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 2px solid #ccc; /* إضافة حدود */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* تأثير ظل خفيف */
+  }
+  
+  .sequare:hover {
+    background-color: #f1f1f1;
+    border-color: #999; /* تغيير لون الحدود عند التمرير */
+  }
+  
+  
+  .circle {
+    color: #ff6347; /* لون الدائرة */
+  }
+  
+  .cross {
+    color: #4682b4; /* لون الصليب */
+  }
+  
+  /* رسالة الفوز */
+  .h1 {
+    font-size: 1.8rem;
+    color: #333333;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
